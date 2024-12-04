@@ -1,0 +1,237 @@
+/*****************************
+	Team
+*****************************/
+.team{
+	position: relative;
+	transition: all 0.3s ease-in-out;
+	text-align: center;
+	box-shadow: $box-shadow;
+
+	.team-image{
+		position: relative;
+		overflow:hidden;
+		padding: 10px;
+
+		.team-social{
+		position: absolute;
+	    top: 50%;
+	    left:-50px;
+	    transform: translatey(-50%);
+	    opacity: 1;
+	    transition: all 0.5s ease-in-out;
+			ul{
+				display: inline-block;
+				margin-bottom: 0;
+				padding-left: 0;
+				li{
+					list-style-type: none;
+					margin-bottom: 10px;
+
+					&:last-child{
+						margin-bottom: 0;
+						a{
+							margin-right: 0;
+						}
+					}
+					a{
+						display: block;
+						background-color:$white;
+						color: $gray-4;
+						height: 45px;
+						width: 45px;
+						line-height: 45px;
+						text-align: center;
+						border: 2px solid $primary;
+						border-radius:0;
+						margin-right: 20px;
+						transition: all 0.5s ease;
+						&:hover{
+							background-color:$primary;
+							color:$white;
+						}
+						i{
+							font-size: 16px;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.team-detail{
+		position: relative;
+		padding: 20px 30px 40px 30px;
+		margin: -30px 10px 0px 10px;
+		background: $white;
+		transition: all 0.5s ease-in-out;
+		height:120px;
+		border-radius:$border-radius;
+		box-shadow: $box-shadow;
+		top: 0;
+
+		.team-title{
+			margin-bottom: 10px;
+			font-size: 18px;
+			font-weight: 600;
+			color:$gray-9;
+			margin-top: 5px;
+		}
+
+		.team-label{
+			font-size: 12px;
+			color:$gray-4;
+		}
+
+		.team-content{
+			margin-top: 15px;
+		}
+
+		.team-phone{
+			font-size: 16px;
+			color: $gray-8;
+			display: block;
+			margin-bottom: 10px;
+			transition: all 0.6s ease;
+		}
+
+		.team-email{
+			font-size: 16px;
+			color: $gray-8;
+			display: none;
+			transition: all 0.6s ease;
+		}
+	}
+
+	.icon-btn {
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background: $primary;
+    color: $white;
+    border-radius: 50px;
+  }
+
+	&:hover{
+		.team-image{
+			.team-social{
+				left: 25px;
+				z-index: 9;
+			}
+		}
+
+		.team-detail{
+			top: -25px;
+			transition: all 0.3s ease;
+
+			.team-phone{
+				display: block;
+				transition: all 0.6s ease;
+			}
+
+			.team-email{
+				display: block;
+			}
+		}
+
+		.icon-btn {
+			background: $gray-8;
+      color: $white;
+		}
+	}
+}
+
+.team-style-02 {
+  box-shadow: none;
+
+ .team-image {
+    padding: 0;
+    border-radius:$border-radius;
+	}
+}
+
+.team-single{
+	padding: 10px;
+	background-color: $white;
+	box-shadow: $box-shadow;
+  .team-single-detail{
+
+  	.team-single-img{
+			margin-bottom: 40px;
+		}
+		ul{
+			padding-left: 30px;
+			.media{
+				margin-bottom: 13px;
+				display: flex;
+				span{
+					flex: 0 0 100px;
+					color: $primary;
+					font-weight: 700;
+				}
+				label{
+					margin-bottom: 0;
+				}
+
+				.social{
+					a{
+						padding:0px 10px;
+						color: $gray-8;
+						&:hover{
+							color:$primary;
+						}
+						&:last-child{
+							padding-right: 0;
+						}
+						&:first-child{
+							padding-left: 0;
+						}
+					}
+				}
+			}
+		}
+  }
+}
+
+.quick-contact-form{
+	padding: 40px 30px;
+	background-color: $white;
+	box-shadow: $box-shadow;
+	border-radius: $border-radius; 
+}
+
+
+/* Responsive */
+
+
+
+@media (max-width:1200px) {
+	.team .team-detail{
+		padding: 20px 20px 20px 20px;
+	}
+}
+@media (max-width:991px) {
+
+	.team .team-social ul li a{
+		height: 35px !important;
+	  width: 35px !important;
+	  line-height: 35px !important;
+	}
+
+	.team .team-detail .team-email{
+		font-size: 14px;
+	}
+
+}
+
+
+@media (max-width:479px) {
+
+	.team-single .team-single-detail ul{
+		padding-left: 5px;
+	}
+
+}

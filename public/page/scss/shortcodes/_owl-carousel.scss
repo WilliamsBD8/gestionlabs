@@ -1,0 +1,134 @@
+/*****************************
+	Owl Carousel
+*****************************/
+.owl-carousel {
+	.owl-item {
+		img {
+			width: auto;
+			display: inherit;
+		}
+	}
+
+	.owl-nav {
+		cursor: pointer;
+		z-index: 999;
+		width: 100%;
+		.owl-prev {
+			display: block;
+			position: absolute;
+			text-indent: inherit;
+			width: auto;
+			cursor: pointer;
+			transition: all 0.2s ease-in-out;
+			left: -15px;
+			display: block;
+			position: absolute;
+			text-indent: inherit;
+			top: 55%;
+			transform: translateY(-50%);
+			margin: 0 !important;
+			display: inline-block;
+			margin: 14px 2px 0;
+			i{
+				border-radius: 5px !important;
+		    font-size: 22px;
+		    width: 40px;
+		    height: 80px;
+		    line-height: 80px;
+			}
+		}
+
+		.owl-next {
+			display: block;
+			position: absolute;
+			text-indent: inherit;
+			width: auto;
+			cursor: pointer;
+			transition: all 0.2s ease-in-out;
+			right: -15px;
+			display: block;
+			position: absolute;
+			text-indent: inherit;
+			top: 55%;
+			transform: translateY(-50%);
+			margin: 0 !important;
+			display: inline-block;
+			margin: 14px 2px 0;
+			i{
+				border-radius: 5px !important;
+		    font-size: 22px;
+		    width: 40px;
+		    height: 80px;
+		    line-height: 80px;
+			}
+		}
+
+		i {
+			font-size: 36px;
+			width: 60px;
+			height: 145px;
+			line-height: 145px;
+			display: inline-block;
+			color: $white;
+			background: $primary;
+			border: 0px solid $border-color;
+			text-align: center;
+			transition: all 0.5s ease-in-out;
+			&:hover {
+				background: $gray-9;
+				color: $primary;
+				box-shadow: $box-shadow;
+			}
+		}
+	}
+
+	.owl-controls {
+		.owl-dot {
+			margin: 0;
+			display: inline-block;
+		}
+	}
+
+	.owl-dots {
+		display: inline-block;
+		margin-top: 10px;
+		text-indent: inherit;
+		width: 100%;
+		cursor: pointer;
+		text-align: center;
+		.owl-dot {
+			span {
+				background: $white;
+				display: inline-block;
+				width: 10px;
+				height: 10px;
+				margin-top: 5px;
+				border:1px solid $primary;
+				border-radius: 5px;
+				transition: all 0.5s ease-in-out;
+				cursor: pointer;
+			}
+			&:hover {
+				span {
+					background: $primary;
+				}
+			}
+		}
+
+		.owl-dot.active {
+			span {
+				background: $primary;
+			}
+		}
+	}
+
+	.owl-dot {
+		display: inline-block;
+		margin: 14px 4px 0;
+	}
+
+	.testimonial-item{
+		padding-bottom: 0px;
+		padding-top:0px;
+	}
+}

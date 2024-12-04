@@ -1,0 +1,283 @@
+/*--------------------- Cambios plantilla -----------------------------------------*/
+.btn-floating{
+	background: #01579b !important;
+}
+/*----------------------- Fin cambios --------------------------------------------*/
+
+.s12 .container{
+	margin-bottom: 80px;
+}
+.s12.login .container{
+	margin-bottom: 0px;
+}
+table thead tr th{
+	text-align: center;
+}
+table tbody tr td.action,
+table tbody tr td.estado{
+	text-align: center !important;
+}
+table tbody tr .estado span i{
+	text-align: center !important;
+	font-size: 25px !important;
+	cursor: pointer;
+}
+table tbody tr .estado .check i{
+	color: #3FBA45;
+}
+table tbody tr .estado .error i{
+	color: rgba(244,67,54, .7);
+}
+.download_home{
+	background: inherit !important;
+	border: 0 !important;
+	outline: none !important;
+}
+.download_home i{
+	color: #f44336 !important;
+	font-size: 25px;
+}
+/*[type=checkbox]+span:not(.lever):before {
+	border: 2px solid #3FBA45;
+}
+[type=checkbox]:not(:checked):disabled+span:not(.lever):before{
+	background-color: rgba(244,67,54, .7) !important;
+}
+[type=checkbox]:checked+span:not(.lever):before{
+	border-right: 2px solid #3FBA45;
+    border-bottom: 2px solid #3FBA45;
+}*/
+
+.redo .fas.fa-sync.fa-spin{
+	display: flex;
+	justify-content: center;
+	font-size: 50px;
+	padding: 20px;
+}
+.card-action .load{
+	display: flex;
+	justify-content: center;
+	font-size: 30px;
+}
+.botones_paginador{
+	display: flex;
+	align-items: center;
+}
+.botones_paginador .enviar{
+	color: #fff;
+	font-size: 20px;
+	cursor: pointer;
+	margin: 0 2px 0 2px;
+	padding: 2px 5px;
+	border-radius: 2px;
+	box-shadow: 0 0 3px #4527a0;
+	transition: all 500ms ease;
+}
+.botones_paginador .enviar:hover{
+	box-shadow: 0 0 7px #311b92;
+}
+.mostrar_text{
+	width: 100%;
+	text-align: right;
+}
+
+.card-content.reports{
+	border-bottom: 1px solid lightgray;
+}
+.card-content.reports .col.s12{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 10px 0;
+}
+.card-content.reports .col.s12 .left{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.card-content.reports .col.s12 .left i{
+	color: #3FBA45;
+	font-size: 23px;
+	margin-right: 10px;
+}
+.card-content.reports .col.s12 .left div span{
+	font-size: 12px;
+	cursor: pointer;
+	display: initial !important;
+}
+.card-content.reports .col.s12 .left div span.mouse{
+	cursor: pointer;
+}
+.card-content.reports .col.s12>a i{
+	color: #f44336;
+	font-size: 25px;
+}
+.col.s12 .content_head{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 25px;
+}
+
+.col.s12 .content_head>div{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.col.s12 .content_head span{
+	font-size: 45px;
+}
+.col.s12 .content_head>div i{
+	font-size: 40px;
+	padding: 10px 0 5px 0;
+}
+.col.s12 .content_head>div span{
+	width: 100%;
+	font-size: 20px;
+	text-align: center;
+}
+h2.card-title{
+	font-size: 35px !important;
+	margin-bottom: 20px;
+}
+.centrar_button{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	
+}
+.frm_analisis .select-wrapper input.select-dropdown:focus,
+.condiciones .select-wrapper input.select-dropdown:focus {
+    border-bottom: 1px solid #00bcd4 !important;
+}
+
+.frm_analisis.error label,
+.condiciones.error label {
+    color: red;
+}
+
+.frm_analisis.error .select-dropdown.dropdown-trigger,
+.condiciones.error .select-dropdown.dropdown-trigger {
+    border-bottom: 1px solid red !important;
+}
+.action_detail{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.action_detail a{
+	font-size: 20px;
+	cursor: pointer;
+}
+.action_detail a.delete_detail_list{
+	color: #d32f2f;
+	transition: all 500ms ease;
+}
+.action_detail a.delete_detail_list:hover{
+	text-shadow: 0 0 1px #e57373;
+}
+.action_detail a.editar_detalle{
+	color: rgba(21, 101, 192, .7);
+	transition: all 500ms ease;
+}
+.action_detail a.editar_detalle:hover{
+	text-shadow: 0 0 1px rgba(21, 101, 192);
+}
+.action_detail a.imprimir_ticket{
+	color: rgba(4,153,228, .7);
+	transition: all 500ms ease;
+}
+.action_detail a.imprimir_ticket:hover{
+	text-shadow: 0 0 1px rgba(4,153,228);
+}
+.collapsible.expandable.popout li .collapsible-body{
+	width: 100% !important;
+}
+.collapsible.expandable.popout li .collapsible-body .table-content{
+	width: 100%;
+	overflow-x: auto !important;
+}
+.collapsible.expandable.popout li .collapsible-body .table-content table tr th{
+	min-width: 150px !important;
+}
+.collapsible.expandable.popout li .collapsible-body .table-content .dropdown-content{
+    width: 175px !important;
+    top: 0px !important;
+}
+.collapsible.expandable.popout li .collapsible-body .table-content .dropdown-content li>span{
+    padding: 10px 20px !important;
+}
+div.collapsible-header .list-muestras{
+	width: 100% !important;
+	display: flex !important;
+	flex-wrap: wrap;
+	align-items: center;
+}
+div.collapsible-header .list-muestras span b{
+	font-weight: 800;
+}
+.tabla-productos, #campo_detalle_muestras, #campo_detalle_muestras_basic{
+	width: 100% !important;
+	overflow: auto !important;
+}
+.tabla-productos .table-content{
+	width: 100%;
+	overflow: auto !important;
+}
+
+.datos_sesion{
+    position: absolute;
+    background: rgb(250, 250, 250, .3);
+    width: 100%;
+    left: 0;
+    padding: 10px;
+}
+
+/*.td-none .gc-container .table-bordered>tbody>tr>td:nth-child(7),*/
+/*.td-none .gc-container .table-bordered>tbody>tr>td:nth-child(8),*/
+/*.gc-container .table>thead:first-child>tr:first-child>th[data-order-by="id_tipo_analisis_primer_informe"],*/
+/*.gc-container .table>thead:first-child>tr:first-child>th[data-order-by="id_tipo_analisis_informe_final"] {*/
+/*    display: none;*/
+/*}*/
+
+.ingreso_muestras td {
+    vertical-align: top !important;
+}
+
+.mue_procedencia .input_select {
+    padding: 0px !important;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+}
+
+.mue_procedencia .input_select label {
+    left: 0px !important;
+}
+
+.tabs .tab a.active{
+    background-color: rgb(45, 183, 27, .2) !important;
+}
+.tabs .tab a{
+    color: rgb(45, 183, 27) !important;
+}
+.tabs .indicator{
+    background-color: rgb(45, 183, 27) !important;
+}
+
+
+
+
+
+
+
+
+
+/* Nuevo CSS Para DataTable */
+
+.section-data-tables #table_datatable_muestra_productos tbody,
+.section-data-tables #table_datatable tbody,
+.section-data-tables #table_datatable_vidas_utiles tbody{
+	height: auto !important;
+}

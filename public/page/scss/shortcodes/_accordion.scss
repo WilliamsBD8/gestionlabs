@@ -1,0 +1,85 @@
+/*****************************
+  Accordion
+*****************************/
+.accordion{
+	.card {
+		border: none;
+		padding: 0px;
+		margin-bottom: 15px;
+		border-radius: $border-radius;
+		background: transparent;
+
+		.card-header {
+			background: none;
+			border-bottom: none;
+			padding: 0;
+			margin-bottom: 0;
+			button {
+				position: relative;
+				font-size: 18px;
+				color: $primary;
+				padding: 15px 25px 15px 25px;
+				width: 100%;
+				text-align: left;
+				border: none;
+				background: $white;
+				border: 1px solid $border-color;
+				text-decoration: none;
+				&:before {
+					position: absolute;
+					top: 50%;
+					transform: translateY(-50%);
+					right: 20px;
+					content: "\f146";
+					font-size: 16px;
+					font-family: "Font Awesome 5 Free";
+					border-radius: 50%;
+					z-index: 9;
+					font-weight: 900;
+					text-align: center;
+					color: $primary;
+				}
+			}
+			button.collapsed{
+				color: $gray-9;
+				background: $white;
+				border: 1px solid $border-color;
+				&:before {
+					color: $gray-9;
+				}
+			}
+		}
+	}
+}
+
+.accordion .card .card-header button.collapsed:before {
+	content: "\f0fe";
+}
+
+/* accordion-02 */
+.accordion.accordion-02{
+	.card{
+		padding:8px 0px;
+		.card-header{
+			button{
+				font-size: 14px;
+				padding: 0px 0px 0px 30px;
+				border:none;
+				&:before{
+	       width: 15px;
+	       height: 15px;
+	       line-height: 14px;
+	       font-size: 14px;
+	       left: 0px;
+				}
+				&:after{
+					display: none;
+				}
+		  }
+		}
+
+		.card-body {
+			padding: 10px 0px 0px 30px;
+		}
+  }
+}

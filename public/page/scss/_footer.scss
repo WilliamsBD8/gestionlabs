@@ -1,0 +1,283 @@
+/*****************************
+  Footer
+*****************************/
+.footer{
+	h6{
+		margin-bottom: 45px;
+	}
+
+	.footer-logo{
+		margin-bottom: 30px;
+		display: inline-block;
+		img{
+			width: 70%;
+		}
+	}
+
+	.footer-contact-info{
+		ul{
+			padding-top: 0px;
+			background-position: top center;
+    	background-repeat: no-repeat;
+    	width: 100%;
+			li{
+				display: flex;
+				margin-bottom: 20px;
+
+				i{
+				  font-size: 18px;
+				  color:  $primary;
+				  min-width: 25px;
+    			margin-right: 15px;
+				}
+
+				span{
+					align-self: top;
+				}
+
+				&:last-child{
+		    	margin-bottom: 0;
+		    }
+			}
+		}
+	}
+
+	.footer-services-List{
+		display: flex;
+		ul{
+			width: 50%;
+			display: inline-block;
+		}
+	}
+
+	.footer-useful-List{
+		display: flex;
+		ul{
+			width: 50%;
+			display: inline-block;
+		}
+	}
+
+	ul{
+		li{
+			margin-bottom: 15px;
+			&:last-child{
+	    	margin-bottom: 0;
+	    }
+			a{
+				font-size: 12px;
+				color: $white;
+				&:hover{
+					color:$primary;
+				}
+			}
+		}
+	}
+
+	.social-icon{
+		ul{
+			margin: 0;
+			padding: 0;
+			li{
+				list-style-type: none;
+				position: relative;
+				display: inline-block;
+				margin-right: 10px;
+				margin-bottom: 0;
+				&:last-child{
+		    	margin-right: 0px;
+		    }
+				a{
+					font-size: 16px;
+					height: 35px;
+					width: 35px;
+					line-height: 35px;
+					display:inline-block;
+					text-align: center;
+					background-color:$primary;
+					color: $white;
+					border-radius:$border-radius;
+					margin-bottom: 10px;
+					&:hover{
+						background: darken($primary, 6%);
+						border-color: darken($primary, 6%);
+					}
+				}
+			}
+		}
+	}
+
+	.footer-subscribe{
+		margin-top: 40px;
+		form{
+			position: relative;
+			.form-control{
+				padding-right: 60px;
+				border-radius:$border-radius;
+				border:none;
+			}
+			.btn{
+				position: absolute;
+		    right: 0;
+		    line-height: 20px;
+		    top: 0;
+		    padding: 13px 20px;
+		    border-top-left-radius: 0;
+    		border-bottom-left-radius: 0;
+		    i{
+		    	padding-right: 0;
+		    }
+			}
+		}
+	}
+
+	.opening-time{
+		ul{
+			li{
+				border-bottom: 1px solid $gray-7;
+				padding-bottom: 10px;
+				margin-bottom: 10px;
+				color: $white;
+				&:last-child{
+					padding-bottom: 0;
+					margin-bottom: 0;
+					border-bottom:none;
+				}
+			}
+		}
+	}
+
+	.footer-bottom{
+	  border-top: 1px solid $gray-7;
+	  margin-top: 50px;
+		padding-top: 30px;
+		padding-bottom: 30px;
+		.copyright{
+			font-size: 12px;
+		}
+	}
+}
+
+
+/* footer-02 */
+.footer-02{
+	background-color: $gray-1;
+	.footer-contact-info{
+		color: $white;
+		.phone{
+			font-size:24px;
+			color: $white;
+		}
+	}
+
+	.footer-bottom{
+	  border-top: none;
+	}
+
+	.social-icon{
+		ul{
+			li{
+				a{
+					font-size: 18px;
+					background-color:inherit;
+					color: $white;
+					&:hover{
+						background: darken($primary, 6%);
+						border-color: darken($primary, 6%);
+					}
+				}
+			}
+		}
+	}
+}
+
+.footer-02.half-overlay::before {
+	width: 35%;
+}
+
+.footer-02.half-overlay.left-position::before {
+  left: 0px;
+  background: $secondary;
+}
+
+
+.footer-light{
+	background-color: $gray-1;
+	ul{
+			li{
+				a{
+					color: $gray-9;
+				}
+			}
+	}
+	.opening-time{
+		ul{
+			li{
+				color: $gray-9;
+				border-bottom:1px solid $gray-2;
+			}
+		}
+	}
+	.footer-subscribe {
+		.form-control {
+			padding: 14px 20px 13px 20px;
+		}
+	}
+}
+
+.footer-light .footer-bottom{
+	border-top:1px solid $gray-2;
+}
+
+
+/* Responsive */
+
+@media (max-width:991px) {
+
+	/* footer */
+  .footer .footer-bottom {
+		margin-top: 30px;
+	}
+
+	.footer .footer-middle{
+		margin-top: 70px;
+	}
+
+	.footer h6{
+		margin-bottom: 20px;
+	}
+
+	.footer .footer-bottom{
+		padding: 30px 0px 30px;
+	}
+
+	.footer-02{
+		background-color: $secondary;
+	}
+
+  .footer.footer-02 .footer-bottom .copyright,
+	.footer.footer-02 ul li a{
+		color: $white;
+	}
+
+	.footer.footer-02 ul li a:hover{
+		color: $primary;
+	}
+
+}
+
+@media (max-width:767px) {
+
+	.footer .footer-bottom{
+		padding: 20px 0px 20px;
+		margin-top: 20px;
+	}
+
+	.footer .footer-middle{
+		margin-top: 50px;
+	}
+
+	.footer .footer-logo{
+		margin-bottom: 20px;
+	}
+}

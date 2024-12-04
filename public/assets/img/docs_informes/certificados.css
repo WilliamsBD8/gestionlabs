@@ -1,0 +1,77 @@
+.grocery-crud-table tbody td{
+	padding: 0px 8px !important;
+    font-size: 13px !important;
+}
+.grocery-crud-table tbody td:first-child{
+	position: sticky;
+	left: 0;
+	background: #fff !important;
+}
+.gc-container .table-bordered,
+.grocery-crud-table tbody tr td:first-child,
+.grocery-crud-table thead tr th:first-child{
+	border-left: 0px !important;
+}
+.grocery-crud-table tbody tr{
+	background: #fff !important;
+	transition: all 500ms ease !important;
+}
+.grocery-crud-table tbody tr td:first-child,
+.grocery-crud-table thead tr th:first-child{
+	position: sticky;
+	left: 0;
+	transition: all 500ms ease !important;
+}
+.grocery-crud-table tbody tr td:first-child{
+	background: #EBEBEB !important;
+}
+.grocery-crud-table thead tr th:first-child{
+	background: #fff !important;
+}
+.grocery-crud-table tbody tr:hover{
+	background: #F3F2F2 !important
+}
+.grocery-crud-table tbody tr:hover td:first-child{
+	background: #EBEBEB !important;
+}
+.grocery-crud-table thead th{
+	font-size: 14px !important;
+	font-weight: 600;
+}
+.gc-datagrid-table-container{
+	padding-bottom: 0 !important;
+}
+.gc-data-container-text .button.grocery{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.gc-data-container-text .button.grocery button{
+	outline: none !important;
+}
+.doble_click{
+	padding: 5px 2px;
+	cursor: pointer;
+	transition: all 500ms ease;
+}
+.doble_click:hover{
+	background: rgba(0, 0, 0, .05);
+}
+.div_parametros{
+	overflow-x: auto;
+}
+.card-content.card-detalle .div_parametros table thead tr th:first-child,
+.card-content.card-detalle .div_parametros table tbody tr td:first-child{
+	position: sticky;
+	left: 0;
+}
+.card-content.card-detalle .div_parametros table tbody tr td:first-child,
+.card-content.card-detalle .div_parametros table thead tr th{
+	background: #E0F7FA;
+	color: #000;
+	z-index: 10;
+}
+
+.dropify-wrapper {
+    height: 100px !important;
+}

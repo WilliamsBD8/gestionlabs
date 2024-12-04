@@ -1,0 +1,11 @@
+.pdf_container {
+    padding: 10px;
+}
+
+.pdf {
+    height: 450px;
+}
+
+.pdf iframe {
+    height: 100%;
+}

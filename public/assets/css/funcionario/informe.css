@@ -1,0 +1,18 @@
+.campo_imprimir *{
+	font-size: 14px;
+}
+.campo_imprimir h1{
+	font-size: 24px;
+	font-weight: 600;
+}
+.campo_imprimir h2{
+	font-size: 18px;
+	font-weight: 600;
+}
+.campo_imprimir .border thead th,
+.campo_imprimir .border tbody td{
+	border: 1px solid #ddd;
+}
+.campo_imprimir table{
+	border-collapse: inherit;
+}

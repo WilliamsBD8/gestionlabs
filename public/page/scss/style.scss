@@ -1,0 +1,45 @@
+/*
+
+Template: Medic - Health and Medical HTML Template
+Version: 1.0.0
+Author: potenzaglobalsolutions
+Design and Developed by: potenzaglobalsolutions.com
+
+NOTE: This is main stylesheet of template, This file contains the styling for the actual Template.
+
+*/
+
+@import "bootstrap/scss/bootstrap";
+
+// Core files
+@import "variables";
+@import "typography";
+@import "helpers";
+
+// Shortcodes
+@import "shortcodes/accordion";
+@import "shortcodes/button";
+@import "shortcodes/countdown";
+@import "shortcodes/counter";
+@import "shortcodes/datetimepicker";
+@import "shortcodes/feature-info";
+@import "shortcodes/owl-carousel";
+@import "shortcodes/portfolio";
+@import "shortcodes/pricing";
+@import "shortcodes/range-slider";
+@import "shortcodes/select";
+@import "shortcodes/skill";
+@import "shortcodes/tabs";
+@import "shortcodes/team";
+@import "shortcodes/testimonial";
+
+// Structure
+@import "header";
+@import "banner";
+@import "layout";
+
+// Pages
+@import "blog";
+@import "footer";
+@import "shop";
+

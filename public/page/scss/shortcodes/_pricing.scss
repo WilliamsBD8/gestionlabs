@@ -1,0 +1,182 @@
+/*****************************
+  Pricing Table
+*****************************/
+.pricing{
+  background:$white;
+  border:1px solid $border-color;
+  border-radius: $border-radius;
+  text-align: center;
+  box-shadow:$box-shadow;
+
+  .pricing-header{
+    padding: 40px 30px 30px;
+    i{
+      line-height: 1;
+    }
+    .pricing-title{
+      color:$gray-8;
+      font-weight: normal;
+      margin-top: 10px;
+    }
+
+    .pricing-price {
+      position: relative;
+      display: inline-block;
+      font-size: 18px;
+      color: $gray-8;
+      sup {
+        position: absolute;
+        top: 30px;
+        left: -15px;
+        font-size: 18px;
+        color: $gray-8;
+      }
+      strong {
+        font-size: 48px;
+        line-height: 48px;
+        font-weight: normal;
+        color: $gray-8;
+      }
+    }
+  }
+
+  .pricing-body{
+    padding-top:20px;
+    padding-bottom: 40px;
+
+    .pricing-list {
+      margin-bottom: 30px;
+      li {
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid $border-color;
+        color: $gray-3;
+        font-weight: 600;
+        i{
+          font-size: 12px;
+          min-width: 16px;
+          margin-right: 10px;
+          color: $primary;
+        }
+        &:last-child {
+          margin-bottom: 0;
+          border-bottom:none;
+        }
+      }
+    }
+
+    .btn{
+      border:2px solid $gray-3;
+      color: $gray-3;
+      background-color: $white;
+      &:hover{
+        border:2px solid $primary;
+        color: $white;
+        background-color: $primary;
+      }
+    }
+  }
+}
+
+.pricing.active{
+  .pricing-body{
+    .btn{
+      border:2px solid $primary;
+      color: $white;
+      background-color: $primary;
+      &:hover {
+        background: darken($primary, 6%);
+        border-color: darken($primary, 6%);
+        &:not(:disabled) {
+          &:not(.disabled).active {
+            background: $primary;
+            border-color: $primary;
+          }
+          &:not(.disabled) {
+            &:active {
+              background: $primary;
+              border-color: $primary;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.pricing.active{
+  box-shadow: 0 10px 20px rgba($gray-8, 0.1);
+  .pricing-title{
+    color: $primary;
+   }
+  .pricing-price{
+     color: $primary;
+    sup{
+      color: $primary;
+    }
+    strong{
+      color: $primary;
+    }
+    span{
+      color: $primary;
+    }
+  }
+}
+
+.asked-questions{
+  .title{
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .number{
+    height:30px;
+    width: 30px;
+    line-height: 30px;
+    display:inline-block;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    border: 2px solid $gray-8;
+    color: $gray-8;
+    margin-right: 12px;
+    border-radius: $border-radius;
+  }
+}
+
+
+/* Responsive */
+@media (max-width:1199px) {
+
+  .pricing-table-content {
+    margin-right: 10px !important;
+    margin-left: 10px !important;
+  }
+
+  .pricing-prize h2 {
+    font-size: 62px;
+  }
+
+  .pricing-table-title{
+    flex: 0 0 18%;
+  }
+
+}
+
+
+@media (max-width:991px) {
+
+  .pricing .btn{
+    padding: 14px 15px;
+  }
+
+  .pricing-section-title {
+    padding-top: 60px;
+    padding-bottom: 150px;
+  }
+
+}
+
+
+
+
