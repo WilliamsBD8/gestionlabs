@@ -59,7 +59,7 @@
                     <form class="login-form" action="<?= base_url() ?>/validation" method="POST">
                         <div class="row">
                             <div class="input-field col s12">
-                                <h5 class="center-align" style="text-shadow: 0 0 1px"><b>Gestion Lab</b></h5>
+                                <h5 class="center-align" style="text-shadow: 0 0 1px"><b><?= isset(configInfo()['name_app']) ? configInfo()['name_app'] : 'Gestion Lab' ?></b></h5>
                             </div>
                         </div>
                         <div class="row margin">
